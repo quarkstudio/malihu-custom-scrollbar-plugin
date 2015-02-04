@@ -1811,7 +1811,7 @@ and dependencies (minified).
 						}
 					}
 					/* update on main element and scrollbar size changes */
-					if(o.advanced.updateOnContentResize){
+					if(mCSB_container.is(":visible") && o.advanced.updateOnContentResize){
 						ns=[mCSB_container.outerHeight(false),mCSB_container.outerWidth(false),wrapper.height(),wrapper.width(),scrollbarSize()[0],scrollbarSize()[1]];
 						if(ns[0]!==os[0] || ns[1]!==os[1] || ns[2]!==os[2] || ns[3]!==os[3] || ns[4]!==os[4] || ns[5]!==os[5]){
 							doUpd(ns[0]!==os[0] || ns[1]!==os[1]);
